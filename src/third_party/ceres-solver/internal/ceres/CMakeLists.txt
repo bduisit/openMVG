@@ -1,3 +1,4 @@
+
 # Ceres Solver - A fast non-linear least squares minimizer
 # Copyright 2010, 2011, 2012 Google Inc. All rights reserved.
 # http://code.google.com/p/ceres-solver/
@@ -130,7 +131,7 @@ ENDIF (${MINIGLOG})
 SET(CERES_LIBRARY_DEPENDENCIES ${GLOG_LIB})
 
 IF (${CXSPARSE_FOUND})
-  LIST(APPEND CERES_LIBRARY_DEPENDENCIES cxsparse)
+  LIST(APPEND CERES_LIBRARY_DEPENDENCIES cxsparseMVG)
 ENDIF (${CXSPARSE_FOUND})
 
 IF (${OPENMP_FOUND})
